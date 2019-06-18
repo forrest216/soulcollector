@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+  <h1>Damn Soul to Nothingness</h1>
+
+  <h4>Are you sure you would deny <span class="red-text">{{ object.name }}</span> their eternity?</h4>
+
+  <form action="" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="Like They Never Were..." class="btn">
+    <a href="{% url 'show' soul.id %}">Have Mercy</a>
+  </form>
+{% endblock %}

@@ -1,0 +1,105 @@
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+   background-color: #111;
+   color: red;
+   font-family: 'Courier New', Courier, monospace;
+ }
+ 
+ main {
+   flex: 1 0 auto;
+ }
+ 
+ .page-footer {
+   padding-top: 0;
+   text-align: right;
+   background-color: red;
+   color: black;
+   font-weight: bold;
+   font-size: 1.1rem;
+ }
+
+nav, .card-content, .card {
+   background-color: #111;
+}
+
+.card {
+   box-shadow: 0 2px 2px 0 rgba(255,255,255,0.14), 0 3px 1px -2px rgba(255,255,255,0.12), 0 1px 5px 0 rgba(255,255,255,0.2);
+}
+
+label, p, tr, .card-panel {
+   font-size: 1.25rem;
+}
+
+input, a, .show-btn-link, #btn-a-1, #btn-a-2 {
+   color: #9e9e9e
+}
+
+.btn {
+   background: transparent;
+   margin: 5px;
+   color: #9e9e9e;
+   border: 1px solid #9e9e9e;
+}
+
+.btn:hover {
+   background-color: #222;
+}
+
+a p {
+   color: red;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+   border-bottom: 1px solid red;
+   box-shadow: 0 1px 0 0 red;
+}
+
+.select-wrapper input.select-dropdown:focus {
+   border-bottom: 1px solid red;
+}
+
+.dropdown-content, .dropdown-content li>span {
+   background-color: #111;
+   color: #9e9e9e;
+}
+
+.dropdown-content li>span:hover, .btn-flat {
+   color: red;
+}
+
+.datepicker-date-display, 
+.datepicker-calendar-container, 
+.card-panel {
+   background-color: #222;
+   color: #9e9e9e;
+}
+
+.datepicker-table td.is-selected {
+   background-color: rgba(200, 0, 0, .4);
+   color: #9e9e9e;
+   font-weight: bold;
+}
+
+.death {
+   color: white;
+}
+
+ul:not(.browser-default) {
+   padding-bottom: 5px;
+}
+
+header {
+   margin-bottom: 4px;
+}
+
+@media only screen and (min-width: 601px) {
+   nav.nav-extended .nav-wrapper {
+      min-height: 50px;
+   }
+
+   header {
+      margin-bottom: 4px;
+   }
+}

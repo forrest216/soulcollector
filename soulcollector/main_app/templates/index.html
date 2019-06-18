@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<h1>Eternal Souls</h1>
+<hr>
+{% for soul in souls %}
+<a href="{% url 'show' soul.id %}">
+<p>Name: {{ soul.name }}</p>
+{% if soul.age > 18 %}
+<p>Age: {{ soul.age }}</p>
+{% else %}
+<p>Age: Too Soon</p>
+{% endif %}
+</a>
+<hr />
+{% endfor %}
+{% endblock %}
